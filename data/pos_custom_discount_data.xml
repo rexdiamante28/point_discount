@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2016 LasLabs Inc.
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+
+<odoo noupdate="1">
+
+    <record model="pos.custom.discount" id="SCD">
+        <field name="name">SENIOR CITIZEN DISCOUNT</field>
+        <field name="discount_pc">20</field>
+        <field name="description">Disount for Senior Citizen</field>
+    </record>
+
+    <record model="pos.custom.discount" id="DDISC">
+        <field name="name">DISABILITY DISCOUNT</field>
+        <field name="discount_pc">20</field>
+        <field name="description">Disount for PWD</field>
+    </record>
+    
+    <record model="pos.custom.discount" id="RDISC">
+        <field name="name">RELATIVE DISCOUNT</field>
+        <field name="discount_pc">20</field>
+        <field name="description"></field>
+    </record>
+
+    <record model="pos.custom.discount" id="EDISC">
+        <field name="name">EMPLOYEE DISCOUNT</field>
+        <field name="discount_pc">10</field>
+        <field name="description">Discount for Employee</field>
+    </record>
+
+    <record model="pos.custom.discount" id="ADISC">
+        <field name="name">ABSOLUTE DISCOUNT</field>
+        <field name="discount_pc">0</field>
+        <field name="description"></field>
+    </record>
+
+    <record model="pos.custom.discount" id="ZDISC">
+        <field name="name">ZERO RATED SALES DISCOUNT</field>
+        <field name="discount_pc">0</field>
+        <field name="description"></field>
+    </record>
+</odoo>

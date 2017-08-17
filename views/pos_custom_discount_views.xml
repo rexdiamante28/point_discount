@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_pos_custom_discount_tree" model="ir.ui.view">
+            <field name="name">pos.custom.discount.tree</field>
+            <field name="model">pos.custom.discount</field>
+            <field name="arch" type="xml">
+                <tree string="POS Discount">
+                    <field name="name" />
+                    <field name="discount_pc" />
+                    <field name="description" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_pos_custom_discount_form" model="ir.ui.view">
+            <field name="name">pos.custom.discount.form</field>
+            <field name="model">pos.custom.discount</field>
+            <field name="arch" type="xml">
+                <form string="POS Discount">
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="discount_pc" />
+                            <field name="description" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_pos_custom_discount" model="ir.actions.act_window">
+            <field name="name">POS Discount</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pos.custom.discount</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_pos_custom_discount" parent="point_of_sale.menu_point_config_product" name="POS Discount" sequence="10" action="action_pos_custom_discount" />
+    </data>
+</odoo>

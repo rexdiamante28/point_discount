@@ -18,8 +18,10 @@ sale discount to a customer.
 """,
     'depends': ['point_of_sale'],
     'data': [
+        'data/pos_custom_discount_data.xml',
         'views/pos_discount_views.xml',
-        'views/pos_discount_templates.xml'
+        'views/pos_discount_templates.xml',
+        'views/pos_custom_discount_views.xml'
     ],
     'qweb': [
         'static/src/xml/discount_templates.xml',
