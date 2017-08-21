@@ -7,4 +7,22 @@
         </div>
     </t>
 
+    <t t-name="DiscountButtonSCD">
+        <div class='control-button js_discount'>
+            <i class='fa fa-tag' /> SCD
+        </div>
+    </t>
+
+    <t t-name="DiscountButtonPWD">
+        <div class='control-button js_discount'>
+            <i class='fa fa-tag' /> PWD
+        </div>
+    </t>
+
+    <t t-name="DiscountButtonEDISC">
+        <div class='control-button js_discount'>
+            <i class='fa fa-tag' /> EDISC
+        </div>
+    </t>
+
 </templates>
